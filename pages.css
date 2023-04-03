@@ -1,0 +1,257 @@
+/* Font */
+@font-face{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+/* Navigation Button */
+.nav{
+    margin-top: 4vw;
+    margin-left: 8vw;
+}
+
+button{
+background-color: transparent;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+text-decoration: none;
+text-align: center;
+border: 2px solid white;
+border-radius: 30px;
+padding: 14px;
+width: 15vw;
+font-size: 2vw;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+ }
+
+
+h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 4vw;
+    font-size: 4vw;
+    -webkit-text-stroke-width: 1px;
+    margin-top: 2vw;
+    /* border: 2px solid;
+    border-radius: 30px;
+    padding: 2vw;
+    width: 37vw; */
+}
+
+/* Styles for divs created in java */
+div{
+    margin-left: 4vw;
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    padding-right: 26vw;
+    white-space: pre-wrap;
+    padding-bottom: 1vw;
+}
+
+/* Audio Styles */
+audio{
+    float: right;
+    /* margin-top: -48.2vw; */
+    margin-top: -51.5vw;
+    margin-right: 9vw;
+    filter: invert(100%);
+    background-color: #000;
+    outline: 1px solid black;
+    width: 36vw;
+    border-radius: 0px;
+    height: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+audio::-webkit-media-controls-panel {
+    color: black !important;
+  }
+  audio::-webkit-media-controls-current-time-display {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    filter: invert(100%);
+  }
+  audio::-webkit-media-controls-time-remaining-display {
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    filter: invert(100%);
+  }
+
+/* Chrome + Safari) */
+audio::-webkit-media-controls-play-button {
+    color: black !important;
+    font-size: 4em !important;  
+}
+  
+  /* Mozilla Firefox */
+  audio::-moz-media-controls-play-button {
+    color: white !important;
+    font-size: 4em !important;
+  }
+  
+  /* Microsoft Edge + Internet Explorer */
+  audio::-ms-media-controls {
+    color: white !important;
+    font-size: 4em !important;
+  }
+  
+  /* Chrome + Safari */
+audio::-webkit-media-controls-mute-button {
+  color: black !important;
+  font-size: 4em !important;
+}
+
+/* Mozilla Firefox */
+audio::-moz-media-controls-mute-button {
+  color: black !important;
+  font-size: 4em !important;
+}
+
+/* For Microsoft Edge and Internet Explorer */
+audio::-ms-media-controls-mute-button {
+  color: black !important;
+  font-size: 4em !important;
+}
+
+audio::-webkit-media-controls-progress-bar {
+    color: white !important;
+  }
+
+audio:hover{
+  transform: scale(1.04);
+}
+  
+  /* img{
+    transition: 0.5s all ease-in-out;
+    width: 100%;
+  }
+
+  img:hover{
+        transform: scale(1.09);
+  } */
+
+/* Site Photo */
+#imageOne{
+    width: 36vw;
+    height: 26vw;
+    float: right;
+    margin-right: -17vw;
+    /* margin-top: -29vw; */
+    margin-top: -33vw;
+}
+/* Spectrogram */
+#spectra{
+    height: 56vw;
+    width: 81.5vw;
+    margin-top: -15vw;
+    align-content: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 4vw;
+    transition: 0.3s ease-out;
+}
+
+/* #spectra:hover{
+transform: scale(1.02);
+} */
+
+/* Headers Span */
+.label{
+    font-size: 2vw;
+    /* border: 2px solid;
+    border-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: .8vw; */
+}
+
+#spectraLabel{
+    font-size: 2vw;
+    margin-top: 0.2vw;
+    position: absolute;
+    margin-left: 4vw;
+}
+
+/* .outline{
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 40px;
+    height: 42vw;
+    width: 57vw;
+    margin-top: 1vw;
+    margin-left: 8vw;
+}
+
+
+.outlineTwo{
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 40px;
+    height: 44vw;
+    width: 57vw;
+    margin-top: 47vw;
+    margin-left: 8vw;
+} */
+
+/* Spectra Magnifier Glass */
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 900px) {
+  button{
+      width: 30vw;
+      height: 8vw;
+      font-size: 3vw;
+      margin-top: 10vw;
+  }
+  h1{
+   margin-top: 5vw;
+   font-size: 5vw;
+  }
+  div{
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+  .label{
+    font-size: 3vw;
+  }
+  #imageOne{
+   margin-top: -43vw;
+  }
+  audio{
+    margin-top: -59.5vw;
+  }
+  #spectraLabel{
+    font-size: 3vw;
+  }
+  #spectra{
+    margin-top: -14vw;
+}
+}
