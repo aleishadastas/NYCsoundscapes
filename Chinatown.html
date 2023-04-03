@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NYC Soundscapes</title>
+        <link rel="icon" type="image/svg" href="Assets/Favicon.svg?">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pages.css">
+    </head>
+    <body class="prevent-select">
+        <section class="nav">
+            <a href="index.html"> <button>
+                Home
+            </button> </a> 
+            </section>
+
+            <div class="outline"></div>
+            <div class="outlineTwo"></div>
+
+        
+<script>
+    const specificString = 'Chinatown'; 
+
+     fetch('items.json')
+         .then(response => response.json())
+              .then(data => {
+                for (let item of data) {
+                  if (item.Location.includes(specificString)) { // Check if the Location property contains the specific string
+                    // Create a div element
+                    const div = document.createElement('div');
+                    // Set the content and attributes of the div element
+                    div.setAttribute('location', item.Location);
+                    const h1 = document.createElement('h1');
+                    h1.textContent = item.Location;
+                    div.appendChild(h1);
+                    
+                    // Address Content + attributes
+                    const subDiv = document.createElement('div');
+                    const labelSpan = document.createElement('span');
+                    labelSpan.classList.add('label');
+                    labelSpan.textContent = 'HOW TO GET THERE:' + '\n';
+                    //Append to div
+                    subDiv.appendChild(labelSpan);
+                    subDiv.appendChild(document.createTextNode(item.Address));
+                    div.appendChild(subDiv);
+                    document.body.appendChild(div);
+
+
+                    // Date content + attributes
+                    const subDivTwo = document.createElement('div');
+                    const labelSpanTwo = document.createElement('span');
+                    labelSpanTwo.classList.add('label');
+                    labelSpanTwo.textContent = 'DATE:' + '\n';
+                    // Append to div
+                    subDivTwo.appendChild(labelSpanTwo);
+                    subDivTwo.appendChild(document.createTextNode(item.Date));
+                    div.appendChild(subDivTwo);
+                    document.body.appendChild(div);
+
+
+                    // Time content + attributes
+                    const subDivThree = document.createElement('div');
+                    const labelSpanThree = document.createElement('span');
+                    labelSpanThree.classList.add('label');
+                    labelSpanThree.textContent =  'TIME:' + '\n';
+                    // Apennd to div
+                    subDivThree.appendChild(labelSpanThree);
+                    subDivThree.appendChild(document.createTextNode(item.Time));
+                    div.appendChild(subDivThree);
+                    document.body.appendChild(div);
+
+                    // Weather content + attributes
+                    const subDivFour = document.createElement('div');
+                    const labelSpanFour = document.createElement('span');
+                    labelSpanFour.classList.add('label');
+                    labelSpanFour.textContent =  'WEATHER:' + '\n';
+                    // Apennd to div
+                    subDivFour.appendChild(labelSpanFour);
+                    subDivFour.appendChild(document.createTextNode(item.Weather));
+                    div.appendChild(subDivFour);
+                    document.body.appendChild(div);
+
+                   // Description content + attributes
+                    const subDivFive = document.createElement('div');
+                    const spectralabel = document.createElement('p')
+                    const labelSpanFive = document.createElement('span');
+                    spectralabel.textContent = 'SPECTROGRAM:'
+                    spectralabel.id = ('spectraLabel')
+                    labelSpanFive.classList.add('label');
+                    labelSpanFive.textContent =  'DESCRIPTION:' + '\n';
+                    // Append to div
+                    subDivFive.appendChild(labelSpanFive);
+                    subDivFive.appendChild(document.createTextNode(item.Description));
+                    div.appendChild(subDivFive);
+                    document.body.appendChild(div);
+                    div.appendChild(spectralabel);
+
+                    const audioUrl = item.Audio;
+                    const audio = new Audio(audioUrl);
+                    audio.controls = true;
+                    audio.preload = 'auto';
+                    document.body.appendChild(audio);
+                
+                    // Site Photo
+                    const img = document.createElement('img');
+                    img.src = item.Photo;
+                    img.id = "imageOne"; // ID of image
+                    //Append img element to the div
+                    div.appendChild(img);
+
+                    // Create the second image element
+                    const img2 = document.createElement('img');
+                    img2.src = item.Spectrogram;
+                    img2.id = "spectra"; // Set the ID of the second image
+                    img2.textContent = 'SPECTROGRAM:' + 
+                    // Append img2 element to the div
+                    div.appendChild(img2);
+                  }
+                }
+              });
+          </script>
+    </body>
+</html>

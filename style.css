@@ -1,0 +1,675 @@
+/* Font */
+@font-face{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+/* Header & Introduction Styles */
+#intro{
+    margin-left: 7vw;
+    margin-top: 18vw;
+    }
+
+h1{
+    font-size: 5vw;
+    font-weight: normal;
+    line-height: 4vw;
+    -webkit-text-stroke-width: 0.1vw;
+    padding-right: 60%;
+}
+
+p{
+font-size: 2.1vw;
+margin-top: -2vw;
+}
+
+/* About Button */
+button{
+background-color: transparent;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+text-decoration: none;
+text-align: center;
+border: 2px solid white;
+border-radius: 30px;
+padding: 14px;
+width: 15vw;
+font-size: 2vw;
+}
+
+ button:hover{
+    color: black;
+    background-color: white;
+ }
+
+ /* SVG Map */
+ img{
+    width: 48vw;
+    height: 58vw;
+    align-content: right;
+    margin-left: 48vw;
+    margin-top: -38vw;
+ }
+
+ /* Location Circles */
+ .circles-container div {
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    position: absolute;
+    }
+    
+ .circles-container div:hover {
+    width: 11vw;
+    height: 11vw;
+    transition: all 0.4s ease-in-out; /* fade transition effect */
+    z-index: 1;
+    }
+    
+    /* Circle One position & hover state: Bronx, Dog Park in Bronx Park East */
+    #circleOne{
+      margin-top: -55.5vw;
+      margin-left: 65vw;
+      background-color: #449310;
+    }
+
+    #circleOne:hover{
+        background: url("assets/bronx/bronx_park.png");
+        background-size: cover;
+        background-position: center; 
+        margin-top: -56vw;
+        margin-left: 61vw;
+    }
+ 
+    /* Circle Two position & hover state: Bronx, Little Italy */
+    #circleTwo{
+        margin-top: -54vw;
+        margin-left: 60vw;
+        background-color: #449310;
+      }
+    
+    #circleTwo:hover{
+          background: url("Assets/Bronx/Little_Italy.jpeg");
+          background-size: cover;
+          background-position: center; 
+          margin-top: -55.5vw;
+          margin-left: 55.5vw;
+      }
+
+      /* Circle Three position & hover state: Bronx, Grand Concourse Area */
+      #circleThree{
+        margin-top: -51vw;
+        margin-left: 57.5vw;
+        background-color: #449310;
+      }
+
+      #circleThree:hover{
+          background: url("Assets/Bronx/Caridad.png");
+          background-size: cover;
+          background-position: center; 
+          margin-top: -55.5vw;
+          margin-left: 53vw;
+      }
+
+      /* Circle Four position & hover state: Bronx, Near Yankee Stadium */
+      #circleFour{
+        margin-top: -47.5vw;
+        margin-left: 56.5vw;
+        background-color: #449310;
+      }
+
+      #circleFour:hover{
+          background: url("Assets/Bronx/Yankee.png");
+          background-size: cover;
+          background-position: center;
+          margin-top: -52vw;
+          margin-left: 52vw; 
+      }
+
+       /* Circle Five position & hover state: Bronx, Woodstock/Longwood */
+       #circleFive{
+        margin-top: -45.5vw;
+        margin-left: 64vw;
+        background-color: #449310;
+      }
+
+      #circleFive:hover{
+          background: url("Assets/Bronx/Casa_Amadeo.png");
+          background-size: cover;
+          background-position: center; 
+          margin-top: -49.5vw;
+          margin-left: 60vw;
+      }
+      
+      /* Manhattan Circles */
+      /* Circle Six position & hover state: Manhattan, 96th Street Station */
+      #circleSix{
+        margin-top: -35.5vw;
+        margin-left: 59.5vw;
+        background-color: #AEEAE1;
+      }
+
+      #circleSix:hover{
+          background: url("Assets/Manahatta/UpperEast.png");
+          background-size: cover;
+          background-position: center; 
+          opacity: 90%;
+          margin-top: -39.6vw;
+          margin-left: 55.6vw;
+      }
+
+       /* Circle Seven position & hover state: Manhattan, Times Square */
+       #circleSeven{
+        margin-top: -29.5vw;
+        margin-left: 54.2vw;
+        background-color: #AEEAE1;
+      }
+
+      #circleSeven:hover{
+          background: url("Assets/Manahatta/Dimes_Square.png");
+          background-size: cover;
+          background-position: center;
+          margin-top: -34.5vw;
+          margin-left: 50.2vw;
+      }
+
+       /* Circle Eight position & hover state: Manhattan, Chelsea */
+       #circleEight{
+        margin-top: -26.5vw;
+        margin-left: 51.5vw;
+        background-color: #AEEAE1;
+      }
+
+      #circleEight:hover{
+          background: url("Assets/Manahatta/Chelsea.png");
+          background-size: cover;
+          background-position: center;
+          margin-top: -31vw;
+          margin-left: 47.5vw; 
+      }
+      
+       /* Circle Nine position & hover state: Manhattan, Greenwich Village */
+       #circleNine{
+        margin-top: -24vw;
+        margin-left: 56vw;
+        background-color: #AEEAE1;
+      }
+
+      #circleNine:hover{
+          background: url("Assets/Manahatta/Jeff.png");
+          background-size: cover;
+          background-position: center; 
+          margin-top: -28vw;
+          margin-left: 51.5vw;
+      }
+
+      /* Circle Ten position & hover state: Manhattan, Chinatown */
+      #circleTen{
+        margin-top: -22vw;
+        margin-left: 60vw;
+        background-color: #AEEAE1;
+      }
+
+      #circleTen:hover{
+          background: url("Assets/Manahatta/Chinatown.png");
+          background-size: cover;
+          background-position: center;
+          margin-top: -26.5vw;
+          margin-left: 55.5vw; 
+      }
+
+        /* Circle Eleven position & hover state: Manhattan, Whitehall Terminal */
+     #circleEleven{
+            margin-top: -17vw;
+            margin-left: 59.5vw;
+            background-color: #AEEAE1;
+          }
+    
+      #circleEleven:hover{
+              background: url("Assets/Manahatta/Terminal.png");
+              background-size: cover;
+              background-position: center;
+              margin-top: -21vw;
+              margin-left: 55vw; 
+          }
+/* Staten Island Circle Styles */
+/* Circle Twelve position & hover state: Staten Island, Ferry */
+#circleTwelve{
+  margin-top: -15.2vw;
+  margin-left: 56vw;
+  background-color:  #FE9830;
+}
+
+#circleTwelve:hover{
+    background: url("Assets/Staten/Ferry.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -20vw;
+    margin-left: 52vw;
+}
+/* Circle Thirteen position & hover state: Staten Island, St.George */
+#circleThirteen{
+  margin-top: -13.8vw;
+  margin-left: 55vw;
+  background-color:  #FE9830;
+}
+#circleThirteen:hover{
+    background: url("Assets/Staten/George.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -18.6vw;
+    margin-left: 50.5vw;
+}
+/* Circle Fourteen position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleFourteen{
+  margin-top: -13.5vw;
+  margin-left: 56.8vw;
+  background-color:  #FE9830;
+}
+#circleFourteen:hover{
+    background: url("Assets/Staten/Gas.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -18.5vw;
+    margin-left: 52vw;
+}
+
+/* Queens Circle Styles */
+/* Circle Fifteen position & hover state: Queens, Asoria */
+#circleFifteen{
+  margin-top: -36.5vw;
+  margin-left: 67vw;
+  background-color: #FF4236;
+}
+#circleFifteen:hover{
+    background: url("Assets/Queens/Astoria.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -40vw;
+    margin-left: 62.5vw;
+}
+/* Circle Sixteen position & hover state: Queens, Long Island City, Gantry Park */
+#circleSixteen{
+  margin-top: -32vw;
+  margin-left: 63vw;
+  background-color: #FF4236;
+}
+#circleSixteen:hover{
+    background: url("Assets/Queens/Gantry.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -36vw;
+    margin-left: 59vw;
+}
+/* Circle Seventeen position & hover state: Queens, Jackson Heights */
+#circleSeventeen{
+  margin-top: -38vw;
+  margin-left: 73vw;
+  background-color: #FF4236;
+}
+#circleSeventeen:hover{
+    background: url("Assets/Queens/Jackson.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -42.5vw;
+    margin-left: 68.5vw;
+}
+/* Circle Eighteen position & hover state: Queens, Flushing, Roosevelt Ave */
+#circleEighteen{
+  margin-top: -37vw;
+  margin-left: 80vw;
+  background-color: #FF4236;
+}
+#circleEighteen:hover{
+    background: url("Assets/Queens/Roosevelt.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -41vw;
+    margin-left: 75.5vw;
+}
+/* Circle Nineteen position & hover state: Queens, Rockaway Beach */
+#circleNineteen{
+  margin-top: -19vw;
+  margin-left: 92vw;
+  background-color: #FF4236;
+}
+#circleNineteen:hover{
+    background: url("Assets/Queens/Rockaways.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -23.5vw;
+    margin-left: 87vw;
+}
+
+/* Brooklyn Circle Styles */
+/* Circle Twenty position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwenty{
+  margin-top: -26vw;
+  margin-left: 69vw;
+  background-color: #E89CA2;
+}
+#circleTwenty:hover{
+    background: url("Assets/Brooklyn/William.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -30vw;
+    margin-left: 64.5vw;
+}
+/* Circle Twenty-one position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwentyOne{
+  margin-top: -19.5vw;
+  margin-left: 65.5vw;
+  background-color: #E89CA2;
+}
+#circleTwentyOne:hover{
+    background: url("Assets/Brooklyn/Citypoint.png");
+    background-size: cover;
+    background-position: center; 
+    margin-top: -23.5vw;
+    margin-left: 61vw;
+}
+/* Circle Twenty-two position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwentyTwo{
+  margin-top: -20vw;
+  margin-left: 73.5vw;
+  background-color: #E89CA2;
+}
+#circleTwentyTwo:hover{
+  background: url("Assets/Brooklyn/Mac.png");
+  background-size: cover;
+  background-position: center; 
+  margin-top: -24.5vw;
+  margin-left: 69vw;
+}
+/* Circle Twenty-three position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwentyThree{
+  margin-top: -20.5vw;
+  margin-left: 76vw;
+  background-color: #E89CA2;
+}
+#circleTwentyThree:hover{
+  background: url("Assets/Brooklyn/Stuy.png");
+  background-size: cover;
+  background-position: center; 
+  margin-top: -25vw;
+  margin-left: 71.5vw;
+}
+/* Circle Twenty-four position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwentyFour{
+  margin-top: -6vw;
+  margin-left: 79vw;
+  background-color: #E89CA2;
+}
+#circleTwentyFour:hover{
+  background: url("Assets/Brooklyn/Coney.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -13.5vw;
+  margin-left: 74.5vw;
+}
+/* Circle Twenty-five position & hover state: Staten Island, Tompkinsville Gas Station */
+#circleTwentyFive{
+  margin-top: -16vw;
+  margin-left: 69vw;
+  background-color: #E89CA2;
+}
+#circleTwentyFive:hover{
+  background: url("Assets/Brooklyn/Prospect.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -20.5vw;
+  margin-left: 65vw;
+}
+
+/* Media Queries */
+
+ @media (max-width: 900px) {
+  #intro{
+      margin-top: 10vw;
+  }
+  h1{
+    padding-right: 0vw;
+    font-size: 9vw;
+    text-align: center;
+    margin-left: -6vw;
+  }
+  p{
+      font-size: 4vw;
+      text-align: center;
+      margin-left: -6vw;
+  }
+  img{
+    height: 110vw;
+    width: 82vw;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
+  }
+  button{
+      width: 30vw;
+      height: 9vw;
+      font-size: 4vw;
+      margin-left: 25vw;
+  }
+  .circles-container{
+    margin-left: -10vw;
+    margin-top: 0vw;
+    margin-bottom: 8vw;
+  }
+  .circles-container div {
+    width: 2vw;
+    height: 2vw;
+    }
+    #circleOne{
+      margin-top: -108vw;
+      margin-left: 44vw;
+    }
+    #circleTwo{
+      margin-top: -104vw;
+      margin-left: 37vw;
+    }
+    #circleThree{
+      margin-top: -99vw;
+      margin-left: 30vw;
+    }
+    #circleFour{
+      margin-top: -95vw;
+      margin-left: 29vw;
+    }
+    #circleFive{
+      margin-top: -93vw;
+      margin-left: 43vw;
+    }
+    #circleSix{
+      margin-top: -74vw;
+      margin-left: 37vw;
+    }
+    #circleSeven{
+      margin-top: -64vw;
+      margin-left: 27vw;
+    }
+    #circleEight{
+      margin-top: -59vw;
+      margin-left: 23vw;
+    }
+    #circleNine{
+      margin-top: -54vw;
+      margin-left: 30vw;
+    }
+    #circleTen{
+      margin-top: -48vw;
+      margin-left: 37vw;
+    }
+    #circleEleven{
+      margin-top: -42vw;
+      margin-left: 36vw;
+    }
+    #circleTwelve{
+      margin-top: -39vw;
+      margin-left: 30vw;
+    }
+    #circleThirteen{
+      margin-top: -37vw;
+      margin-left: 29vw;
+    }
+    #circleFourteen{
+      margin-top: -37vw;
+      margin-left: 31.5vw;
+    }
+    #circleFifteen{
+      margin-top: -68vw;
+      margin-left: 42.5vw;
+    }
+    #circleSixteen{
+      margin-top: -75vw;
+      margin-left: 48vw;
+    }
+    #circleSeventeen{
+      margin-top: -77vw;
+      margin-left: 58vw;
+    }
+    #circleEighteen{
+      margin-top: -75vw;
+      margin-left: 69vw;
+    }
+    #circleNineteen{
+      margin-top: -45vw;
+      margin-left: 92vw;
+    }
+    #circleTwenty{
+      margin-top: -59vw;
+      margin-left: 53vw;
+    }
+    #circleTwentyOne{
+      margin-top: -48vw;
+      margin-left: 48vw;
+    }
+    #circleTwentyTwo{
+      margin-top: -47vw;
+      margin-left: 58vw;
+    }
+    #circleTwentyThree{
+      margin-top: -49vw;
+      margin-left: 61vw;
+    }
+    #circleTwentyFour{
+      margin-top: -26vw;
+      margin-left: 71vw;
+    }
+    #circleTwentyFive{
+      margin-top: -39vw;
+      margin-left: 51.5vw;
+    }
+    #circleOne:hover{
+      margin-top: -108vw;
+      margin-left: 44vw;
+    }
+    #circleTwo:hover{
+      margin-top: -104vw;
+      margin-left: 37vw;
+    }
+    #circleThree:hover{
+      margin-top: -99vw;
+      margin-left: 30vw;
+    }
+    #circleFour:hover{
+      margin-top: -95vw;
+      margin-left: 29vw;
+    }
+    #circleFive:hover{
+      margin-top: -93vw;
+      margin-left: 43vw;
+    }
+    #circleSix:hover{
+      margin-top: -74vw;
+      margin-left: 37vw;
+    }
+    #circleSeven:hover{
+      margin-top: -64vw;
+      margin-left: 27vw;
+    }
+    #circleEight:hover{
+      margin-top: -59vw;
+      margin-left: 23vw;
+    }
+    #circleNine:hover{
+      margin-top: -54vw;
+      margin-left: 30vw;
+    }
+    #circleTen:hover{
+      margin-top: -48vw;
+      margin-left: 37vw;
+    }
+    #circleEleven:hover{
+      margin-top: -42vw;
+      margin-left: 36vw;
+    }
+    #circleTwelve:hover{
+      margin-top: -39vw;
+      margin-left: 30vw;
+    }
+    #circleThirteen:hover{
+      margin-top: -37vw;
+      margin-left: 29vw;
+    }
+    #circleFourteen:hover{
+      margin-top: -37vw;
+      margin-left: 31.5vw;
+    }
+    #circleFifteen:hover{
+      margin-top: -68vw;
+      margin-left: 42.5vw;
+    }
+    #circleSixteen:hover{
+      margin-top: -75vw;
+      margin-left: 48vw;
+    }
+    #circleSeventeen:hover{
+      margin-top: -77vw;
+      margin-left: 58vw;
+    }
+    #circleEighteen{
+      margin-top: -75vw;
+      margin-left: 69vw;
+    }
+    #circleNineteen:hover{
+      margin-top: -45vw;
+      margin-left: 92vw;
+    }
+    #circleTwenty:hover{
+      margin-top: -59vw;
+      margin-left: 53vw;
+    }
+    #circleTwentyOne:hover{
+      margin-top: -48vw;
+      margin-left: 48vw;
+    }
+    #circleTwentyTwo:hover{
+      margin-top: -47vw;
+      margin-left: 58vw;
+    }
+    #circleTwentyThree:hover{
+      margin-top: -49vw;
+      margin-left: 61vw;
+    }
+    #circleTwentyFour:hover{
+      margin-top: -26vw;
+      margin-left: 71vw;
+    }
+    #circleTwentyFive:hover{
+      margin-top: -39vw;
+      margin-left: 51.5vw;
+    }
+}

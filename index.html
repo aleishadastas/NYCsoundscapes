@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NYC Soundscapes</title>
+        <link rel="icon" type="image/svg" href="Assets/Favicon.svg?">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="prevent-select">
+
+        <!-- Title & Intro -->
+        <div id="intro">
+        <h1>NYC SOUNDSCAPES</h1>
+        <p>Click the circles for more</p>
+       <a href="about.html"> <button>
+            About
+        </button> </a>
+       </div>
+
+       <!-- NYC SVG Map -->
+        <div id="vector map">
+            <img src="assets/vectorMap.svg" alt="NYCvectorMap"> 
+        </div>
+          
+        <!-- Container for all Locations on SVG Map -->
+        <div class="circles-container">
+         <!-- Individual Locations + Links in descending order -->
+             <!-- Bronx  -->
+                <a href="BronxDogPark.html"><div id="circleOne"></div></a>
+                <a href="LittleItaly.html"><div id="circleTwo"></div></a>
+                <a href="GrandConcourse.html"><div id="circleThree"></div></a>
+                <a href="YankeeStadium.html"><div id="circleFour"></div></a>
+                <a href="CasaAmadeo.html"><div id="circleFive"></div></a>
+             <!-- Manhattan -->
+                <a href="96Street.html"><div id="circleSix"></div></a>
+                <a href="TimesSquare.html"><div id="circleSeven"></div></a>
+                <a href="Chelsea.html"><div id="circleEight"></div></a>
+                <a href="Greenwich.html"><div id="circleNine"></div></a>
+                <a href="Chinatown.html"><div id="circleTen"></div></a>
+                <a href="Whitehall.html"><div id="circleEleven"></div></a>
+             <!-- Staten Island -->
+               <a href="StatenIslandFerry.html"><div id="circleTwelve"></div></a>
+               <a href="St.George.html"><div id="circleThirteen"></div></a>
+               <a href="Tompkinsville.html"><div id="circleFourteen"></div></a>
+             <!-- Queens -->
+                <a href="Astoria.html"><div id="circleFifteen"></div></a>
+                <a href="GantryPark.html"><div id="circleSixteen"></div></a>
+                <a href="JacksonHeights.html"><div id="circleSeventeen"></div></a>
+                <a href="Flushing.html"><div id="circleEighteen"></div></a>
+                <a href="Rockaways.html"><div id="circleNineteen"></div></a>
+             <!-- Brooklyn -->
+                 <a href="Williamsburg.html"><div id="circleTwenty"></div></a>
+                 <a href="CityPoint.html"><div id="circleTwentyOne"></div></a>
+                 <a href="MacDonough.html"><div id="circleTwentyTwo"></div></a>
+                 <a href="Stuy.html"><div id="circleTwentyThree"></div></a>
+                 <a href="ConeyIsland.html"><div id="circleTwentyFour"></div></a>
+                 <a href="ProspectPark.html"><div id="circleTwentyFive"></div></a>
+        </div>
+       
+        <!-- Map Locations Audio Previews (Corresponds to location order above)-->
+        <section class="audio previews">
+         <!-- Bronx  -->
+        <audio id="audioOne" src="audios/bronx/dog.m4a"></audio>
+        <audio id="audioTwo" src="audios/bronx/little_italy.m4a"></audio>
+        <audio id="audioThree" src="audios/bronx/concourse.m4a"></audio> 
+        <audio id="audioFour" src="audios/bronx/yankee_stadium.m4a"></audio>
+        <audio id="audioFive" src="audios/bronx/casa.m4a"></audio>
+         <!-- Manhattan  -->
+         <audio id="audioSix" src="audios/manhattan/96th.m4a"></audio>
+         <audio id="audioSeven" src="audios/manhattan/times_square.m4a"></audio>
+         <audio id="audioEight" src="audios/manhattan/chelsea.m4a"></audio> 
+         <audio id="audioNine" src="audios/manhattan/greenwich.m4a"></audio>
+         <audio id="audioTen" src="audios/manhattan/chinatown.m4a"></audio>
+         <audio id="audioEleven" src="audios/manhattan/whitehall.m4a"></audio>
+        <!-- Staten Island -->
+         <audio id="audioTwelve" src="audios/staten/ferry.m4a"></audio>
+         <audio id="audioThirteen" src="audios/staten/george.m4a"></audio>
+         <audio id="audioFourteen" src="audios/staten/tompkinsville.m4a"></audio> 
+        <!-- Queens -->
+         <audio id="audioFifteen" src="audios/queens/astoria.m4a"></audio>
+         <audio id="audioSixteen" src="audios/queens/long_island_city.m4a"></audio>
+         <audio id="audioSeventeen" src="audios/queens/jackson.m4a"></audio> 
+         <audio id="audioEighteen" src="audios/queens/roosevelt.m4a"></audio>
+         <audio id="audioNineteen" src="audios/queens/rockaways.m4a"></audio>
+         <!-- Brooklyn -->
+         <audio id="audioTwenty" src="audios/brooklyn/williamsburg.m4a"></audio>
+         <audio id="audioTwentyOne" src="audios/brooklyn/city_point.m4a"></audio>
+         <audio id="audioTwentyTwo" src="audios/brooklyn/macdonough.m4a"></audio> 
+         <audio id="audioTwentyThree" src="audios/brooklyn/stuy.m4a"></audio>
+         <audio id="audioTwentyFour" src="audios/brooklyn/coney_island.m4a"></audio>
+         <audio id="audioTwentyFive" src="audios/brooklyn/prospect.m4a"></audio>
+        </section>
+        
+        
+
+
+
+        <script src="java.js"></script>
+     
+    </body>
+</html>
